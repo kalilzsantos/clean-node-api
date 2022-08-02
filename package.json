@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "lint-stages": {
+    "*.js": [
+      "standard --fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,8 @@
   },
   "homepage": "https://github.com/kalilzsantos/clean-node-api#readme",
   "devDependencies": {
+    "jest": "^28.1.3",
+    "lint-staged": "^13.0.3",
     "standard": "^17.0.0"
   }
 }
