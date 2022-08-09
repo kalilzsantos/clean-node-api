@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --silent",
-    "test:ci": "jest --coverage"    
+    "test": "jest --silent --noStackTrace --passWithNoTests",
+    "test:unit": "npm test -- --watch",
+    "test:ci": "npm test -- --coverage"    
   },
   "lint-stages": {
     "*.js": [
