@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --silent --noStackTrace --passWithNoTests",
-    "test:unit": "npm test -- --watch",
-    "test:ci": "npm test -- --coverage"    
+    "test:unit": "npm test -- --watch -c jest-unit-config.js",
+    "test:integration": "npm test -- --watch -c jest-integration-config.js",
+    "test:ci": "npm test -- --coverage" 
   },
   "lint-stages": {
     "*.js": [
